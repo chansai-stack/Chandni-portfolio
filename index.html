@@ -243,8 +243,26 @@
     }
 
     .achievement-card h4 { color: white; margin-bottom: 0.75rem; font-size: 1.1rem; }
-    .achievement-metric { font-size: 2rem; font-weight: bold; color: #60a5fa; margin-bottom: 0.75rem; }
+    .achievement-metric { font-size: 1.6rem; font-weight: bold; color: #60a5fa; margin-bottom: 0.75rem; }
     .achievement-card p { color: #cbd5e1; font-size: 0.875rem; line-height: 1.5; }
+
+    .achievements-subtitle {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 1.75rem 0 1rem;
+      padding-top: 0.25rem;
+    }
+
+    .achievements-subtitle h3 {
+      font-size: 1.25rem;
+      color: #ffffff;
+    }
+
+    .achievements-subtitle span {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
 
     /* Education Cards */
     .education-item {
@@ -318,7 +336,6 @@
     }
 
     .highlight-box strong { color: white; }
-
     .highlight-box p { color: #cbd5e1; margin-top: 0.5rem; }
 
     .chevron { transition: transform 0.3s; }
@@ -337,14 +354,14 @@
   <!-- Hero Section -->
   <header>
     <div class="container">
-      <div class="profile-image">JS</div>
-      <h1>John Smith</h1>
+      <div class="profile-image">CS</div>
+      <h1>Chandni Sharma</h1>
       <p class="tagline">VP Solution Architecture | Agentic AI &amp; Enterprise Cloud Leader</p>
       <p class="subtitle">Ex-Google Manager (70+ Reports) • $3B+ Revenue Impact • AI/ML Expert • MBA Candidate</p>
 
       <div class="cta-buttons">
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:chandni.sharma.cloud@gmail.com"
           class="btn btn-primary"
           onclick="trackEvent('engagement', 'contact_click', 'Email Button')"
         >
@@ -362,7 +379,7 @@
       </div>
 
       <div class="social-links">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+        <a href="https://www.linkedin.com/in/chandnisharmacloud/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
         <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
         <span>📍 Austin, TX (Remote + Travel)</span>
       </div>
@@ -599,41 +616,130 @@
       </div>
 
       <div class="section-content" id="achievements-content">
+        <!-- 1) Internal Companies -->
+        <div class="achievements-subtitle">
+          <h3>1) Internal Companies</h3>
+          <span>Wipro • NTT Data • Google</span>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Google -->
+          <div class="achievement-card">
+            <h4>Google — Revenue &amp; Enterprise Impact</h4>
+            <div class="achievement-metric">$3B+ impact</div>
+            <p>Delivered $3B+ customer-attributed business impact through enterprise solution architecture, strategic RFP leadership, and scalable AI/ML + GenAI programs.</p>
+          </div>
+
+          <div class="achievement-card">
+            <h4>Google — Org Scaling &amp; Leadership</h4>
+            <div class="achievement-metric">70+ team</div>
+            <p>Scaled Solutions Architecture org from 15 → 70+; enabled 150–200% quota performance and developed/promoted 25+ architects.</p>
+          </div>
+
+          <div class="achievement-card">
+            <h4>Google — Recognition &amp; Awards</h4>
+            <div class="achievement-metric">Top &lt;1%</div>
+            <p>Earned Google Cloud President’s Club (Top &lt;1%) and 3x Global Stratosphere winner (2021–2024) for sustained, global performance.</p>
+          </div>
+
+          <!-- NTT -->
+          <div class="achievement-card">
+            <h4>NTT Data — Consulting Growth</h4>
+            <div class="achievement-metric">$25M+ deals</div>
+            <p>Drove $25M+ in consulting wins through technical leadership, client executive alignment, and cloud/Big Data solution delivery.</p>
+          </div>
+
+          <div class="achievement-card">
+            <h4>NTT Data — Cloud Migration Results</h4>
+            <div class="achievement-metric">30% cost ↓</div>
+            <p>Spearheaded enterprise migration to AWS from Cloudera, reducing infrastructure costs by ~30% while enabling modern analytics/ML workloads.</p>
+          </div>
+
+          <!-- Wipro -->
+          <div class="achievement-card">
+            <h4>Wipro — Transformation Leadership</h4>
+            <div class="achievement-metric">$10M+ impact</div>
+            <p>Led global engineering delivery in regulated financial environments; executed modernization programs producing $10M+ business impact.</p>
+          </div>
+        </div>
+
+        <!-- 2) External World -->
+        <div class="achievements-subtitle">
+          <h3>2) External World</h3>
+          <span>Global cohorts • Buildathons • Awards</span>
+        </div>
+
         <div class="achievements-grid">
           <div class="achievement-card">
-            <h4>Revenue Impact</h4>
-            <div class="achievement-metric">$3B+</div>
-            <p>Led initiatives delivering $3+ Billions in customer-attributed revenue and $1+ Billions in profit through strategic solution architecture and enterprise engagements</p>
+            <h4>Maven — Best Tech Impact Award</h4>
+            <div class="achievement-metric">#1 cohort award</div>
+            <p>
+              Received “Best Tech Impact Award” in Maven’s Agentic AI Product Management cohort (200+ global professionals from Apple, Microsoft, Google, Amazon, Meta, Walmart, and more) for building StratAI in 2 months.
+            </p>
           </div>
 
           <div class="achievement-card">
-            <h4>Team Leadership</h4>
-            <div class="achievement-metric">70+ Reports</div>
-            <p>Scaled solution architecture organization at Google from 15 to 70+ members, achieving 150-200% quota and promoting 25+ architects to senior roles</p>
+            <h4>StratAI — Executive Forecasting Product</h4>
+            <div class="achievement-metric">Explainable foresight</div>
+            <p>
+              Built an AI-driven market forecasting tool for hardware &amp; semiconductor executives combining real-time external signals (AI adoption, crypto, EV, supply chain, regulation) with scenario simulations and clear, explainable executive summaries.
+            </p>
           </div>
 
           <div class="achievement-card">
-            <h4>Google Recognition</h4>
-            <div class="achievement-metric">Top &lt;1%</div>
-            <p>Awarded Google Cloud President's Club (Top &lt;1% in company) and 3x Global Stratosphere winner (2021-2024) for exceptional performance</p>
+            <h4>SheBuilds 2025 — Lovable Buildathon</h4>
+            <div class="achievement-metric">Top 7%</div>
+            <p>
+              Selected among the top 7% globally (214 out of 2,844 applicants) across regions including USA, India, Canada, UK, Singapore, Japan, Middle East, Europe, Latin America, Africa, and Australia.
+            </p>
           </div>
 
           <div class="achievement-card">
-            <h4>GenAI Adoption</h4>
-            <div class="achievement-metric">1,000+</div>
-            <p>Drove 1,000+ customers growth in Generative AI across Financial Services, Insurance, and internal workflows at enterprise scale</p>
+            <h4>Advanced Product Management — Honors &amp; 1st Place</h4>
+            <div class="achievement-metric">🥇 + Honors</div>
+            <p>
+              Earned Advanced Product Management Certification with Honors (taught by a former Sr. Director of Google PM) and won 1st Place in the global summer cohort capstone by building a working prototype + growth strategy.
+            </p>
           </div>
 
           <div class="achievement-card">
-            <h4>Enterprise Solutions</h4>
-            <div class="achievement-metric">50+</div>
-            <p>Architected and deployed 50+ mission-critical AI/ML solutions for Fortune 500 clients across multiple industries</p>
+            <h4>LinkedIn Capstone — TrueHire (Verified Jobs)</h4>
+            <div class="achievement-metric">Trust = growth</div>
+            <p>
+              Designed an AI-powered “Verified Jobs” trust engine to address ghost jobs (18–36% postings not actively hiring; ~40% companies admit to ghost postings). Roadmap: Verified badge → Job Quality Scores → Community feedback loop → $1.4B+ revenue potential.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3) Personal Achievements -->
+        <div class="achievements-subtitle">
+          <h3>3) Personal Achievements</h3>
+          <span>Education • Executive learning • Career readiness</span>
+        </div>
+
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <h4>MBA Candidate — Kelley School of Business</h4>
+            <div class="achievement-metric">Expected 2027</div>
+            <p>Focused on Technology Strategy, Innovation Management, and Executive Leadership to accelerate VP-level product + architecture impact.</p>
           </div>
 
           <div class="achievement-card">
-            <h4>Product Impact</h4>
-            <div class="achievement-metric">$100M+</div>
-            <p>Helped launch and scale AI products generating $100M+ revenue, contributing to top-three rankings in Gartner's AI Magic Quadrant</p>
+            <h4>MS — AI + Information Systems</h4>
+            <div class="achievement-metric">Completed</div>
+            <p>Advanced foundation in AI/ML systems, data science, and enterprise architecture to ship solutions end-to-end.</p>
+          </div>
+
+          <div class="achievement-card">
+            <h4>Executive Programs</h4>
+            <div class="achievement-metric">MIT + Purdue</div>
+            <p>Completed executive learning in Generative AI for Business Transformation (Purdue) and AI Business Executive Program (MIT Sloan).</p>
+          </div>
+
+          <div class="achievement-card">
+            <h4>Work Authorization Readiness</h4>
+            <div class="achievement-metric">Cap-exempt</div>
+            <p>Cap-exempt H1B with I-140 approved (no sponsorship delays), enabling immediate alignment with executive hiring timelines.</p>
           </div>
         </div>
       </div>
@@ -829,7 +935,7 @@
 
       <div class="cta-buttons">
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:chandni.sharma.cloud@gmail.com"
           class="btn btn-primary"
           onclick="trackEvent('engagement', 'footer_contact', 'Email Footer')"
         >
@@ -837,7 +943,7 @@
         </a>
 
         <a
-          href="https://linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/chandnisharmacloud/"
           class="btn btn-secondary"
           target="_blank"
           rel="noopener noreferrer"
@@ -847,7 +953,7 @@
       </div>
 
       <p style="color: #64748b; font-size: 0.875rem; margin-top: 2rem;">
-        © 2025 John Smith. All rights reserved.
+        © 2025 Chandni Sharma. All rights reserved.
       </p>
     </div>
   </footer>
