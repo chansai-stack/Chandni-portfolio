@@ -266,6 +266,73 @@
     .school { color: #60a5fa; }
     .education-date { color: #94a3b8; font-size: 0.875rem; }
 
+.what-i-do-intro {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1.75rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 1rem;
+}
+
+.what-i-do-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.what-i-do-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.75) 0%, rgba(15, 23, 42, 0.9) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  min-height: 220px;
+}
+
+.what-i-do-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(96, 165, 250, 0.55);
+  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.18);
+}
+
+.what-i-do-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.what-i-do-card h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.what-i-do-card p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.what-i-do-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.what-i-do-pill {
+  background: rgba(59, 130, 246, 0.12);
+  color: #bfdbfe;
+  border: 1px solid rgba(96, 165, 250, 0.28);
+  border-radius: 9999px;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+    
     footer {
       border-top: 1px solid rgba(148, 163, 184, 0.1);
       background: rgba(15, 23, 42, 0.5);
@@ -413,6 +480,68 @@
         <h4>70+ Team Leadership</h4>
         <p>Global Solutions Architecture organization at Google</p>
       </div>
+    </div>
+  </div>
+</section>
+
+    <section id="what-i-do">
+  <div class="section-header">
+    <div class="section-title">
+      <span style="font-size: 1.5rem;">🧭</span>
+      <h2>What I Do</h2>
+    </div>
+  </div>
+
+  <div class="section-content active">
+    <div class="what-i-do-intro">
+      I operate at the intersection of <strong>AI strategy</strong>, <strong>enterprise architecture</strong>, and
+      <strong>business transformation</strong>—helping organizations move from vision to scalable execution.
+    </div>
+
+    <div class="what-i-do-grid">
+      <div class="what-i-do-card">
+        <div class="what-i-do-icon">🧠</div>
+        <h3>Shape AI Strategy</h3>
+        <p>
+          Define executive-ready AI, GenAI, and agentic AI strategies aligned to growth, efficiency,
+          customer outcomes, and competitive differentiation.
+        </p>
+      </div>
+
+      <div class="what-i-do-card">
+        <div class="what-i-do-icon">🏗️</div>
+        <h3>Architect Enterprise Platforms</h3>
+        <p>
+          Design scalable cloud, data, and AI platforms across GCP, AWS, and Azure with strong focus
+          on security, governance, interoperability, and long-term business value.
+        </p>
+      </div>
+
+      <div class="what-i-do-card">
+        <div class="what-i-do-icon">🤝</div>
+        <h3>Translate Technology to Business Value</h3>
+        <p>
+          Partner with C-suite, product, engineering, and go-to-market teams to turn complex architecture
+          into compelling narratives, winning strategies, and measurable outcomes.
+        </p>
+      </div>
+
+      <div class="what-i-do-card">
+        <div class="what-i-do-icon">🚀</div>
+        <h3>Scale Adoption & Transformation</h3>
+        <p>
+          Lead cross-functional teams, customer programs, and technical communities to accelerate adoption,
+          operational excellence, and enterprise transformation at scale.
+        </p>
+      </div>
+    </div>
+
+    <div class="what-i-do-footer">
+      <div class="what-i-do-pill">AI & Agentic Systems</div>
+      <div class="what-i-do-pill">Solutions Architecture</div>
+      <div class="what-i-do-pill">Enterprise Transformation</div>
+      <div class="what-i-do-pill">GTM & Product Strategy</div>
+      <div class="what-i-do-pill">Executive Stakeholder Leadership</div>
     </div>
   </div>
 </section>
