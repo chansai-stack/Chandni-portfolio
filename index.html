@@ -24,6 +24,32 @@
   </script>
 
   <style>
+
+    .hero-summary {
+  max-width: 900px;
+  margin: 0.75rem auto 1.25rem;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-badge {
+  background: rgba(59, 130, 246, 0.12);
+  color: #dbeafe;
+  border: 1px solid rgba(96, 165, 250, 0.28);
+  border-radius: 9999px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
@@ -35,12 +61,34 @@
 
     .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
-    header {
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
-      padding: 4rem 0;
-      text-align: center;
-      border-bottom: 1px solid rgba(148, 163, 184, 0.1);
-    }
+    header .container {
+  position: relative;
+}
+
+header .container::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.18) 0%, rgba(147, 51, 234, 0.12) 35%, rgba(15, 23, 42, 0) 75%);
+  filter: blur(18px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+header .container > * {
+  position: relative;
+  z-index: 1;
+}
+   header {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+  padding: 3.25rem 0 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
 
     .profile-image {
       width: 140px; height: 140px; margin: 0 auto 1.5rem;
@@ -63,10 +111,14 @@
     .tagline { font-size: 1.5rem; color: #cbd5e1; margin-bottom: 0.5rem; }
     .subtitle { font-size: 1.1rem; color: #94a3b8; margin-bottom: 2rem; }
 
-    .cta-buttons {
-      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
-      margin-bottom: 2rem;
-    }
+  .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  margin-bottom: 1.1rem;
+}
 
     .btn {
       padding: 0.875rem 2rem;
@@ -108,12 +160,13 @@
 
     .social-links a:hover { color: #60a5fa; }
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 3rem 0;
-    }
+  .stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0 2.5rem;
+  margin-top: -0.25rem;
+}
 
     .stat-card {
       background: rgba(30, 41, 59, 0.5);
@@ -374,18 +427,25 @@
       <div class="profile-image">CS</div>
       <h1>Chandni Sharma</h1>
       <p class="tagline">Strategic AI & Cloud Transformation Executive | Solutions Architecture | Agentic AI Leader</p>
-      <p class="subtitle">Ex-Google Manager (70+ Reports) • $3B+ Revenue Impact • AI/ML Expert • MBA Candidate</p>
+     <p class="hero-summary">
+  I help enterprises translate AI, cloud, and architecture strategy into scalable business outcomes through executive advisory, technical leadership, and transformation execution.
+</p>
 
+<div class="hero-badges">
+  <span class="hero-badge">Ex-Google Leader</span>
+  <span class="hero-badge">70+ People Management Leadership</span>
+  <span class="hero-badge">$3+ Billions USD Business Impact</span>
+  <span class="hero-badge">MBA Candidate</span>
+</div>
       <div class="cta-buttons">
-        <a href="mailto:chandni.sharma.cloud@gmail.com" class="btn btn-primary" onclick="trackEvent('engagement', 'contact_click', 'Email Button')">
-          ✉️ Contact Me
-        </a>
-      </div>
+ <a href="mailto:chandni.sharma.cloud@gmail.com" class="btn btn-primary">Contact Me</a>
+  <a href="https://chansai-stack.github.io/Chandni-portfolio/" target="_blank" class="btn btn-secondary">View Portfolio</a>
+</div>
 
       <div class="social-links">
         <a href="https://www.linkedin.com/in/chandnisharmacloud/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
-        <a href="https://chansai-stack.github.io/Chandni-portfolio/" target="_blank">
-  🌐 Github Portfolio
+       <a href="https://chansai-stack.github.io/Chandni-portfolio/" target="_blank" rel="noopener noreferrer">
+  🌐 Portfolio
 </a>
         <span>📍 Austin, TX (Remote + Travel)</span>
       </div>
@@ -441,7 +501,7 @@
         <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.8;">
           Specializing in <strong style="color: #60a5fa;">Agentic AI systems</strong>, multi-agent architectures, LLM-based
           solutions, and enterprise AI transformation. Currently completing MBA from Indiana University - Kelley School of Business
-          while exploring VP-level opportunities in the rapidly evolving agentic AI landscape.
+         while exploring executive leadership opportunities in AI, solutions architecture, and enterprise transformation.
         </p>
 
         <div class="highlight-box">
@@ -1047,7 +1107,7 @@
     <div class="container">
       <h3>Let's Connect</h3>
       <p>
-        I'm actively exploring VP Solution Architecture opportunities in Agentic AI and Enterprise Cloud.
+       I'm actively exploring executive leadership opportunities in AI, solutions architecture, and enterprise transformation.
         Open to remote roles with travel flexibility.
       </p>
 
